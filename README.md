@@ -18,7 +18,8 @@ The Must Use Plugins Base is a foundational plugin designed to manage and load m
 
 1. **Download and Upload:**
    - Download the `mu-plugins-base` plugin files.
-   - Upload the plugin folder to your WordPress `wp-content/mu-plugins/` directory.
+   - unzip if downloaded as zip
+   - Upload the plugin files excluding dolder to your WordPress `wp-content/mu-plugins/` directory.
 
 2. **Loading Plugins:**
    - Inside the `mu-plugins-base.php` file, you can require any additional MU plugins using the `require` statement.
@@ -32,6 +33,7 @@ The Must Use Plugins Base is a foundational plugin designed to manage and load m
      ```php
      require WPMU_PLUGIN_DIR . '/line-block/line-block.php';
      ```
+    **NB** if the plugin is missing comment this line out
 
 ## Usage
 
